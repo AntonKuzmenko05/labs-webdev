@@ -1,12 +1,67 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лабораторна 1</title>
-</head>
-<body>
-<p>Студент: Кузьменко Антон Сергійович</p>
-<p>Група: 6-1214-пі-2</p>
-</body>
-</html>
+{{#> layout pageTitle="Головна" studentGroup="6-1214-пі-2" studentEmail="tohaabob@gmail.com" }}
+<section class="news">
+    <h2 class="news__title">Останні новини</h2>
+    <div class="news__list">
+        <article class="news-card">
+            <figure class="news-card__media media">
+                <picture>
+                    <source type="image/avif" srcset="/src/assets/images/avif/Aizencat.avif">
+                    <source type="image/webp" srcset="/src/assets/images/webp/Aizencat.webp">
+                    <img
+                            src="/src/assets/images/png/Aizencat.png"
+                            alt="Фото зі студентського заходу"
+                            class="media__img"
+                            width="640" height="360"
+                            loading="lazy" decoding="async" />
+                </picture>
+            </figure>
+            <h3 class="news-card__title">Старт навчального веб-проєкту</h3>
+            <p class="news-card__excerpt">Група розпочала роботу над веб-проєктом, який охопить HTML, CSS, JS та React…</p>
+            <div class="news-card__meta">
+                <time class="news-card__date" datetime="2025-09-10">10 вер 2025</time>
+                <a href="#" class="news-card__btn">Читати далі</a>
+            </div>
+        </article>
+        <article class="news-card">
+            <figure class="news-card__media media">
+                <picture>
+                    <source type="image/avif" srcset="/src/assets/images/avif/troop-cat.avif">
+                    <source type="image/webp" srcset="/src/assets/images/webp/troop-cat.webp">
+                    <img
+                            src="/src/assets/images/png/troop-cat.png"
+                            alt="Flexbox + Grid"
+                            class="media__img"
+                            width="640" height="360"
+                            loading="lazy" decoding="async" />
+                </picture>
+            </figure>
+            <h3 class="news-card__title">Flexbox + Grid: практика</h3>
+            <p class="news-card__excerpt">На четвертій лекції розберемо одновимірний та двовимірний лейаути з практикою…</p>
+            <div class="news-card__meta">
+                <time class="news-card__date" datetime="2025-09-12">12 вер 2025</time>
+                <a href="#" class="news-card__btn">Читати далі</a>
+            </div>
+        </article>
+        <article class="news-card">
+            <figure class="news-card__media media">
+                <picture>
+                    <source type="image/avif" srcset="/src/assets/images/avif/toji.avif">
+                    <source type="image/webp" srcset="/src/assets/images/webp/toji.webp">
+                    <img
+                            src="/src/assets/images/png/toji.jpg"
+                            alt="React"
+                            class="media__img"
+                            width="640" height="360"
+                            loading="lazy" decoding="async" />
+                </picture>
+            </figure>
+            <h3 class="news-card__title">React</h3>
+            <p class="news-card__excerpt">Заплановано вивчення основ React…</p>
+            <div class="news-card__meta">
+                <time class="news-card__date" datetime="2025-09-15">15 вер 2025</time>
+                <a href="#" class="news-card__btn">Читати далі</a>
+            </div>
+        </article>
+    </div>
+</section>
+{{/layout}}

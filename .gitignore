@@ -1,1 +1,19 @@
+# IntelliJ IDEA
 .idea/
+*.iml
+
+node_modules/
+# Файли оточення
+.env
+.env.*
+!.env.example
+
+# ОС та системні файли
+.DS_Store
+Thumbs.db
+
+# Логи та тимчасові файли
+*.log
+tmp/
+
+dist/
