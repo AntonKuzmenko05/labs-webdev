@@ -1,12 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
 import handlebars from 'vite-plugin-handlebars'
-import tailwindcss from "@tailwindcss/vite";
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import tailwindcss from '@tailwindcss/vite';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 export default defineConfig({
     input: {
@@ -25,8 +21,8 @@ export default defineConfig({
             ),
 
             context: {
-                siteName: 'Лабораторна 6',
-                labName: 'Лабораторна № 6',
+                siteName: 'Лабораторна 7',
+                labName: 'Лабораторна № 7',
             },
 
             reloadOnPartialChange: true,
