@@ -21,9 +21,11 @@
   },
   "homepage": "https://github.com/AntonKuzmenko05/labs-webdev#readme",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "autoprefixer": "^10.6.1",
     "postcss": "^8.5.31",
     "sass-embedded": "^1.106.0",
+    "tailwindcss": "^4.3.3",
     "vite": "^8.3.5",
     "vite-plugin-handlebars": "^2.0.3"
   }
