@@ -1,6 +1,12 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
 import handlebars from 'vite-plugin-handlebars'
+import tailwindcss from "@tailwindcss/vite";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default defineConfig({
     input: {
@@ -10,6 +16,7 @@ export default defineConfig({
     },
     resolve: { alias: { '@': resolve(import.meta.dirname, 'src') } },
     plugins: [
+        tailwindcss(),
         handlebars({
             partialDirectory: resolve(
                 import.meta.dirname,
